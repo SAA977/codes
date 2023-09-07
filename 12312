@@ -1,0 +1,11 @@
+z = int(input())
+x = int(z/100000)
+c = int((float(z/100000) - x)* 10)
+v = int((float(z/10000) - int(z/10000))*10)
+b = int((float(z/1000) - int(z/1000))*10)
+n = int((float(z/100) - int(z/100))*10)
+m = int((float(z/10) - int(z/10))*10)
+if (x + c + v) == (b + n + m):
+    print('cчастливый')
+else:
+    print('не счастливый')
